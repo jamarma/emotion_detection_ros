@@ -1,0 +1,4 @@
+model:
+
+  algorithm: KNN
+  max_num_faces: 1

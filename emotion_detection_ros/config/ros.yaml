@@ -1,0 +1,17 @@
+subscribers:
+
+  camera_reading:
+    topic: /raspicam_node/image/compressed
+    queue_size: 1
+
+publishers:
+
+  bounding_boxes:
+      topic: /emotion_detection_ros/bounding_boxes
+      queue_size: 1
+      latch: False
+
+image_view:
+
+  enable: True
+  wait_key_delay: 1

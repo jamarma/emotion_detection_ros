@@ -1,0 +1,6 @@
+<launch>
+    <node name="emotion_detection" pkg="emotion_detection_ros" type="emotion_detection_node.py"/>
+
+    <rosparam file="$(find emotion_detection_ros)/config/model.yaml" command="load"/>
+    <rosparam file="$(find emotion_detection_ros)/config/ros.yaml" command="load"/>
+</launch>
