@@ -22,7 +22,7 @@ There are three models pre-trained available for use:
 * **KNN** (K Nearest Neighbours) - Accuracy: 93%
 * **MLP** (Multi Layer Perceptron) - Accuracy: 96%
 
-In section [ROS parameters]() explains how to change the model.
+In section [Model configuration](https://github.com/jmrtzma/emotion_detection_ros#model-configuration) explains how to change the model.
 
 ## Installation
 
