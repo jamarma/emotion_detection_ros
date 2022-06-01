@@ -28,7 +28,7 @@ In section [ROS parameters]() explains how to change the model.
 
 ### Python environment setup
 
-We tested this system under **Python 3.7.9**. In **Raspberry Pi 4b** under **Raspberry Pi OS (buster) 32-bit**, you should change the default version of Python (Python2) to Python3.
+We tested this system under **Python 3.7.3**. In **Raspberry Pi 4b** under **Raspberry Pi OS (buster) 32-bit**, you should change the default version of Python (Python2) to Python3.
 
 ```
 sudo rm /usr/bin/python
@@ -46,6 +46,8 @@ Install the python modules using pip.
 ```
 pip install -r requirements.txt
 ```
+
+The module `mediapipe-rpi4` in requirements.txt file only works in Raspberry Pi 4, if you want to run this package on another platform you must install the compatible mediapipe module. Normally it is `mediapipe`.
 
 ### ROS setup
 
@@ -111,33 +113,34 @@ roslaunch emotion_detection_ros emotion_detection_ros.launch
 You can change the names of subscribers and publishers, and other configuration in `emotion_detection_ros/config/ros.yaml`.
 
 #### Subscribed Topics
-* camera_reading ([sensor_msgs/CompressedImage])
+* `camera_reading` ([sensor_msgs/CompressedImage])
 
 Frame stream received from camera.  
 You must change the name of this topic if you want to use a different camera.
 
 #### Published Topics
-* bounding_boxes ([emotion_detection_ros_msgs/BoundingBoxes])
+* `bounding_boxes` ([emotion_detection_ros_msgs/BoundingBoxes])
 
 Publishes a list of bounding boxes that gives information of the Class detected and position and size of the bounding box in pixel coordinates.
 
 #### Image view
-* enable (bool)
+* `enable` (bool)
 
 Controls whether you want to activate the image view or not.
 
-* wait_key_delay (int)
+* `wait_key_delay` (int)
 
 Delay of image view.
 
 ### Model configuration
 You can change some parameters of the model in `emotion_detection_ros/config/model.yaml`.
 
-* algorithm (string)
+* `algorithm` (string)
 
-Indicates the algorithm of the model to be used. (KNN or SVM or MLP)
+Indicates the algorithm of the model to be used.  
+Valid arguments: SVM, KNN and MLP.
 
-* max_num_faces (int)
+* `max_num_faces` (int)
 
 Indicates the maximum number of faces to be detected.
 
