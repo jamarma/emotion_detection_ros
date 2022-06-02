@@ -24,6 +24,14 @@ There are three models pre-trained available for use:
 
 In section [Model configuration](https://github.com/jmrtzma/emotion_detection_ros#model-configuration) explains how to change the model.
 
+### One face examples
+
+![](https://github.com/jmrtzma/emotion_detection_ros/blob/main/doc/1_face.png)
+
+### Two face examples
+
+![](https://github.com/jmrtzma/emotion_detection_ros/blob/main/doc/2_face.png)
+
 ## Installation
 
 ### Python environment setup
