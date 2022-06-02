@@ -22,7 +22,7 @@ There are three models pre-trained available for use:
 * **KNN** (K Nearest Neighbours) - Accuracy: 93%
 * **MLP** (Multi Layer Perceptron) - Accuracy: 96%
 
-In section [Model configuration](https://github.com/jmrtzma/emotion_detection_ros#model-configuration) explains how to change the model.
+In [Model configuration](https://github.com/jmrtzma/emotion_detection_ros#model-configuration) section explains how to change the model.
 
 ### One face examples
 
@@ -31,6 +31,21 @@ In section [Model configuration](https://github.com/jmrtzma/emotion_detection_ro
 ### Two face examples
 
 ![](https://github.com/jmrtzma/emotion_detection_ros/blob/main/doc/2_face.png)
+
+### Performance
+We have measured the system performance on the Raspberry Pi 4b which depends on the configuration parameter `max_num_faces` ([Model configuration](https://github.com/jmrtzma/emotion_detection_ros#model-configuration) section).
+
+* `max_num_faces: 1`
+
+![](https://github.com/jmrtzma/emotion_detection_ros/blob/main/doc/performance1.png)
+
+* `max_num_faces: 2`
+
+![](https://github.com/jmrtzma/emotion_detection_ros/blob/main/doc/performance2.png)
+
+* `max_num_faces: 3`
+
+![](https://github.com/jmrtzma/emotion_detection_ros/blob/main/doc/performance3.png)
 
 ## Installation
 
