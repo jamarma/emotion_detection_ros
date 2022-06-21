@@ -18,9 +18,9 @@ Based on **The Extended Cohn-Kanade Dataset (CK+)**[1][2] this system can detect
 
 There are three models pre-trained available for use:
 
-* **SVM** (Support Vector Machine) - Accuracy: 95%
-* **KNN** (K Nearest Neighbours) - Accuracy: 95%
-* **MLP** (Multi Layer Perceptron) - Accuracy: 96%
+* **KNN** (K Nearest Neighbours) - Accuracy: 95% (model recommended)
+* **SVM** (Support Vector Machine) - Accuracy: 95% (value of probability in output not available)
+* **MLP** (Multi Layer Perceptron) - Accuracy: 95%
 
 In [Model configuration](https://github.com/jmrtzma/emotion_detection_ros#model-configuration) section explains how to change the model.
 
