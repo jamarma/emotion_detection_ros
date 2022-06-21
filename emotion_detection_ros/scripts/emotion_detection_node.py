@@ -116,7 +116,7 @@ class EmotionDetection:
             draw_fps(self.frame, self.fps)
 
             if self.image_view_enabled:
-                cv2.imshow('Image', self.frame)
+                cv2.imshow('emotion_detection_ros', self.frame)
                 cv2.waitKey(self.image_view_wait_key_delay)
 
 if __name__ == '__main__':
