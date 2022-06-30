@@ -5,7 +5,7 @@
 This is a ROS package developed for **emotion detection** in camera images of **low cost robots**.
 The detection system has been developed in Javier Martínez's final degree project, more information [here](https://github.com/jmvega/tfg-jmartinez).
 
-This package has been tested under **ROS Noetic** in **Raspberry Pi 4b** under **Raspberry Pi OS (buster) 32-bit**. The camera that has been used is the **Raspberry Pi Camera Module V2 8MP**. 
+This package has been tested under **ROS Noetic** in **Raspberry Pi 4b** under **Raspberry Pi OS (buster) 32-bit**. The camera that has been used is the **Raspberry Pi Camera Module V2.1**. 
 
 Author: [Javier Martínez](https://github.com/jmrtzma)
 
@@ -25,6 +25,7 @@ There are three models pre-trained available for use:
 In [Model configuration](https://github.com/jmrtzma/emotion_detection_ros#model-configuration) section explains how to change the model.
 
 ### One face examples
+Video DEMO [here](https://www.youtube.com/watch?v=SeQapLUDexM).
 
 ![](https://github.com/jmrtzma/emotion_detection_ros/blob/main/doc/1_face.png)
 
