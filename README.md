@@ -27,7 +27,6 @@ There are three models pre-trained available for use:
 In [Model configuration](https://github.com/jmrtzma/emotion_detection_ros#model-configuration) section explains how to change the model.
 
 ### One face examples
-Video DEMO [here](https://www.youtube.com/watch?v=SeQapLUDexM).
 
 ![](https://github.com/jmrtzma/emotion_detection_ros/blob/main/doc/1_face.png)
 
